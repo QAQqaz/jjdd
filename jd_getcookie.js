@@ -1,6 +1,6 @@
 /**************************************
 [rewrite_local]
-^http[s]?:\/\/api\.m\.jd\.com\/client\.action\? url script-response-body jd_getcookie.js
+^http[s]?:\/\/api\.m\.jd\.com\/client\.action\? url script-response-body https://raw.githubusercontent.com/QAQqaz/jjdd/main/jd_getcookie.js
 
 [mitm]
 hostname = mars.jd.com
