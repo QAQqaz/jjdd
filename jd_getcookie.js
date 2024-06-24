@@ -21,7 +21,7 @@ if (pt_pin_match && pt_key_match) {
     console.log("未找到pt_pin或pt_key。");
 }
 
-console.log("获取京东Cookie"+headerCookie);
+#console.log("获取京东Cookie"+headerCookie);
 
 if(headerCookie){
 	$notify("更新京东Cookie成功🎉", "", "无需禁用脚本，仅cookie改变时才会重新获取");
