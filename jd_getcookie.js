@@ -1,18 +1,10 @@
 /**************************************
- * Quantumult X 脚本配置
- **************************************/
+[rewrite_local]
+^http[s]?:\/\/api\.m\.jd\.com\/client\.action\? url script-response-body https://raw.githubusercontent.com/QAQqaz/jjdd/main/jd_getcookie.js
 
-// 重写配置
-let rewriteConfig = {
-    url: /^https?:\/\/api\.m\.jd\.com\/client\.action\?/,
-    scriptPath: "https://raw.githubusercontent.com/QAQqaz/jjdd/main/jd_getcookie.js",
-    hostname: "api.m.jd.com"
-};
-
-// MITM 配置
-let mitmConfig = {
-    hostname: "api.m.jd.com"
-};
+[mitm]
+hostname = mars.jd.com
+*****************************************/
 
 // 获取Cookie并打印pt_pin和pt_key
 function getCookiesAndLog() {
