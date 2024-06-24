@@ -13,8 +13,8 @@ function getCookiesAndLog() {
     let pt_key_match = headerCookie.match(/pt_key=([^;]+)/);
 
     if (pt_pin_match && pt_key_match) {
-        #console.log("pt_pin: " + pt_pin_match[1]);
-        #console.log("pt_key: " + pt_key_match[1]);
+        console.log("pt_pin: " + pt_pin_match[1]);
+        console.log("pt_key: " + pt_key_match[1]);
         console.log("pt_pin=" + pt_pin_match[1] + ";pt_key=" + pt_key_match[1] + ";");
         $notify("京东Cookie更新成功🎉", "", "pt_pin=" + pt_pin_match[1] + ";pt_key=" + pt_key_match[1] + ";");
     } else {
